@@ -1,0 +1,16 @@
+{
+  "name": "bagel-module-loader",
+  "version": "1.0.0",
+  "description": "Flexible module loader",
+  "comments": "September 28, 2018",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node ../../scripts/compile-src",
+    "watch": "node ../../scripts/compile-src --watch"
+  },
+  "author": "jsopensource@wayfair.com",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "lru-cache": "4.1.3"
+  }
+}

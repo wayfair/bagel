@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stopwatch spec helpers to create event names getBatchEventName 1`] = `"batch"`;
+
+exports[`stopwatch spec helpers to create event names getInitialPropsEventName 1`] = `"getting initial props for \\"a\\""`;
+
+exports[`stopwatch spec helpers to create event names getJobEventName 1`] = `"processing job for \\"a\\""`;
+
+exports[`stopwatch spec helpers to create event names getLazyLoadEventName 1`] = `"lazy loading modules for \\"a\\""`;
+
+exports[`stopwatch spec helpers to create event names getLoadEventName 1`] = `"loading modules for \\"a\\""`;
+
+exports[`stopwatch spec helpers to create event names getRenderEventName 1`] = `"rendering \\"a\\""`;

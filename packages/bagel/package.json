@@ -1,0 +1,26 @@
+{
+  "name": "bagel",
+  "version": "1.0.0",
+  "description": "Server side rendering service for React components",
+  "comments": "October 3, 2018",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node ../../scripts/compile-src",
+    "watch": "node ../../scripts/compile-src --watch"
+  },
+  "author": "jsopensource@wayfair.com",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "bagel-module-loader": "1.0.0",
+    "express": "4.16.4",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
+    "uuid": "3.3.2",
+    "websocket": "1.0.26",
+    "ws": "6.0.0"
+  },
+  "devDependencies": {
+    "deepmerge": "2.1.0",
+    "get-port": "4.0.0"
+  }
+}
