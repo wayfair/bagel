@@ -1,6 +1,6 @@
 {
   "name": "bagel-module-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flexible module loader",
   "comments": "September 28, 2018",
   "main": "dist/index.js",
