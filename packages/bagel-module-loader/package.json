@@ -12,5 +12,9 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "lru-cache": "4.1.3"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wayfair/bagel.git"
   }
 }

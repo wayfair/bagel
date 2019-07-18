@@ -22,5 +22,9 @@
   "devDependencies": {
     "deepmerge": "2.1.0",
     "get-port": "4.0.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/wayfair/bagel.git"
   }
 }
