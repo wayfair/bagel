@@ -1,6 +1,6 @@
 // @flow
 
-import bagel from '../index';
+import bagel, {logger} from '../index';
 import createWebsocketServer from '../websocket_io';
 import wsRequest from '../utils/ws_request';
 import type {Resolver} from 'bagel-module-loader';
@@ -30,6 +30,8 @@ const startBagelWithPlugins = async (plugins = []) => {
     port,
     transport: createWebsocketServer
   });
+
+  logger.setGlobalLevel('info');
 };
 
 afterEach(() => {
@@ -324,4 +326,34 @@ it('attaches metadata in "pre job response" lifecycles', async () => {
   expect(meta.luigi).toBe('mario');
   expect(meta.vegtable).toBe('squash');
   expect(batchResponseMetadata.foo).toBe('bar');
+});
+
+it('exposes module loader to plugins', async () => {
+  const testLoadModulePlugin = {
+    beforeBatch({batchResponseMetadata, loadModule}) {
+      expect(
+        loadModule({
+          //         jobRequest,
+          //         parentBatchRequest,
+          //         jobResponseMetadata,
+          //         batchResponseMetadata
+        }).default
+      ).toBe('foo');
+    }
+  };
+
+  await startBagelWithPlugins([testLoadModulePlugin]);
+  const requestData = {
+    ID_0: {
+      name: './__tests__/example_components/simple_react_component',
+      metadata: {
+        jobId: 'ID_0'
+      },
+      props: {}
+    }
+  };
+
+  await wsRequestToUrl(requestData);
+
+  expect.assertions(1);
 });
