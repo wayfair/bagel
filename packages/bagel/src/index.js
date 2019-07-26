@@ -78,7 +78,11 @@ const init = (
     withLoadModuleHooks,
     withRenderHooks,
     afterRequestComplete
-  } = withPluginHooks(config.plugins);
+  } = withPluginHooks({
+    plugins: config.plugins,
+    // eslint-disable-next-line no-use-before-define
+    loadModule: (...args) => loadModuleHandler({...args})
+  });
 
   /**
    * Here we wire together the various functions bagel needs. In order to

@@ -103,15 +103,17 @@ type LoadModuleHandler = JobHandlerRequest => Promise<RenderHandlerRequest>;
 type LifeCycleMethod<T> = T => Promise<void> | void;
 
 type Plugin = {
-  beforeBatch?: LifeCycleMethod<BatchHandlerRequest>,
-  afterBatch?: LifeCycleMethod<BatchHandlerResponse>,
-  afterRequestComplete?: LifeCycleMethod<BatchHandlerRequest>,
-  beforeJob?: LifeCycleMethod<JobHandlerRequest>,
-  afterJob?: LifeCycleMethod<JobHandlerResponse>,
-  beforeLoadModule?: LifeCycleMethod<JobHandlerRequest>,
-  afterLoadModule?: LifeCycleMethod<RenderHandlerRequest>,
-  beforeRender?: LifeCycleMethod<RenderHandlerRequest>,
-  afterRender?: LifeCycleMethod<JobHandlerResponse>
+  beforeBatch?: LifeCycleMethod<BatchHandlerRequest & LoadModuleHandler>,
+  afterBatch?: LifeCycleMethod<BatchHandlerResponse & LoadModuleHandler>,
+  afterRequestComplete?: LifeCycleMethod<
+    BatchHandlerRequest & LoadModuleHandler
+  >,
+  beforeJob?: LifeCycleMethod<JobHandlerRequest & LoadModuleHandler>,
+  afterJob?: LifeCycleMethod<JobHandlerResponse & LoadModuleHandler>,
+  beforeLoadModule?: LifeCycleMethod<JobHandlerRequest & LoadModuleHandler>,
+  afterLoadModule?: LifeCycleMethod<RenderHandlerRequest & LoadModuleHandler>,
+  beforeRender?: LifeCycleMethod<RenderHandlerRequest & LoadModuleHandler>,
+  afterRender?: LifeCycleMethod<JobHandlerResponse & LoadModuleHandler>
 };
 
 type Config = {

@@ -22,7 +22,7 @@ import type {
   LoadModuleHandler
 } from '../types';
 
-const withPluginHooks = (plugins: Array<Plugin>) => {
+const withPluginHooks = ({plugins}: {plugins: Array<Plugin>}) => {
   // Group all of the life cycle hooks by name.
   const pluginLifeCycleHooks = groupObjectsByKeys(plugins);
 

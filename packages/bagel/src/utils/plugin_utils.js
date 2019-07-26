@@ -20,7 +20,7 @@ const makePromiseChain = <T: Object>(fns: Array<LifeCycleMethod<T>>) => (
        * Promise.resolve will slow us down only for one tick per wrapped function.
        */
       Promise.resolve(prev)
-        .then(next)
+        .then(() => next({...initialValue}))
         /**
          * We never care about the return value - it's always the initialValue
          * passed by reference.
