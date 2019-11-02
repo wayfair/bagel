@@ -14,7 +14,7 @@
     "bagel-module-loader": "1.0.1",
     "express": "4.16.4",
     "react": "16.4.0",
-    "react-dom": "16.4.0",
+    "react-dom": "16.11.0",
     "uuid": "3.3.2",
     "websocket": "1.0.26",
     "ws": "6.0.0"
