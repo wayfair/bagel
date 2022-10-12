@@ -12,16 +12,16 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "bagel-module-loader": "1.0.1",
-    "express": "4.16.4",
-    "react": "16.4.0",
-    "react-dom": "16.4.2",
-    "uuid": "3.3.2",
-    "websocket": "1.0.26",
+    "express": "4.18.2",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
+    "uuid": "3.4.0",
+    "websocket": "1.0.34",
     "ws": "6.2.2"
   },
   "devDependencies": {
-    "deepmerge": "2.1.0",
-    "get-port": "4.0.0"
+    "deepmerge": "2.2.1",
+    "get-port": "4.2.0"
   },
   "repository": {
     "type" : "git",
