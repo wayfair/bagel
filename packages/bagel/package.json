@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "deepmerge": "2.2.1",
-    "get-port": "4.2.0"
+    "get-port": "6.1.2"
   },
   "repository": {
     "type" : "git",
