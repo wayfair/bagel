@@ -28,7 +28,7 @@
     "@babel/core": "7.19.3",
     "@babel/preset-env": "7.19.4",
     "@babel/preset-flow": "7.18.6",
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "babel-jest": "24.9.0",
     "babel-plugin-jest-hoist": "24.9.0",
     "chalk": "2.4.2",
