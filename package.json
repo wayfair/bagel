@@ -43,7 +43,7 @@
     "inquirer": "5.2.0",
     "jest": "24.9.0",
     "jest-resolve": "24.9.0",
-    "lerna": "3.22.1",
+    "lerna": "8.1.8",
     "lodash": "4.17.21",
     "minimist": "1.2.7",
     "prettier": "1.19.1",
