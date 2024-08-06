@@ -48,7 +48,7 @@
     "minimist": "1.2.7",
     "prettier": "1.19.1",
     "rimraf": "2.7.1",
-    "semver": "5.7.1"
+    "semver": "7.5.2"
   },
   "optionalDependencies": {
     "fsevents": "1.2.13"
