@@ -51,7 +51,7 @@
     "semver": "5.7.1"
   },
   "optionalDependencies": {
-    "fsevents": "1.2.13"
+    "fsevents": "2.0.0"
   },
   "jest": {
     "testEnvironment": "node",
