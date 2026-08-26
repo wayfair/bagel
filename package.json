@@ -44,7 +44,7 @@
     "jest": "24.9.0",
     "jest-resolve": "24.9.0",
     "lerna": "3.22.1",
-    "lodash": "4.17.21",
+    "lodash": "4.18.1",
     "minimist": "1.2.7",
     "prettier": "1.19.1",
     "rimraf": "2.7.1",
