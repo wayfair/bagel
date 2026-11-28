@@ -16,7 +16,7 @@
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "uuid": "3.4.0",
-    "websocket": "1.0.34",
+    "websocket": "1.0.35",
     "ws": "6.2.2"
   },
   "devDependencies": {
